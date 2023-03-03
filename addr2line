@@ -1,0 +1,17 @@
+The addr2line command in Linux can be used to convert memory addresses to file names and line numbers. This can be useful for debugging programs that have crashed or generated a core dump.
+
+Here's how to use addr2line:
+
+Compile your program with debugging symbols. This is usually done by passing the -g option to your compiler.
+
+Generate a core dump of your program (if it has crashed). This can be done using the gcore command or by sending the SIGABRT signal to your program.
+
+Run addr2line with the memory address you want to look up. For example, to look up the file name and line number for the address 0x4005a0, use the following command:
+
+
+addr2line -e <program> 0x4005a0
+Replace <program> with the name of your program's executable file.
+
+addr2line will output the file name and line number corresponding to the memory address you provided. If the address corresponds to a function, addr2line will also output the name of the function.
+
+Note that addr2line may not always be able to resolve memory addresses to file names and line numbers, particularly if your program has been optimized or stripped of debugging symbols.
