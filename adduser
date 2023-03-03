@@ -1,0 +1,30 @@
+The adduser command in Linux is used to create a new user account. Here's how to use it:
+
+To create a new user account with default settings:
+
+
+sudo adduser username
+
+
+Replace "username" with the desired username for the new account.
+
+You will be prompted to enter and confirm a password for the new user. You can also enter additional information such as the user's full name, phone number, and other details.
+
+If you want to specify additional options, you can use the following syntax:
+
+
+sudo adduser username [options]
+
+
+Replace "username" with the desired username for the new account, and replace "[options]" with any additional options you want to use. Some common options include:
+
+--disabled-login: Creates the account but disables the user's ability to log in with a password. This is useful for system accounts that don't need a login shell.
+--gecos "name,phone,other": Sets the user's full name, phone number, and other information.
+--ingroup groupname: Adds the user to a specific group.
+--home homedir: Sets the user's home directory.
+--shell shell: Sets the user's default shell.
+For example, to create a new user account with the username "johndoe", set the user's full name to "John Doe", and add them to the "users" group, you could use the following command:
+
+
+sudo adduser johndoe --gecos "John Doe" --ingroup users
+Note that you must have root privileges (or be a member of the sudo group) to use the adduser command.
