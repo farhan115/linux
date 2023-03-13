@@ -1,0 +1,17 @@
+In Linux, the alias command is used to create a custom command or shortcut for another command. Here's the basic syntax:
+
+
+alias new_command='original_command'
+For example, if you frequently use the ls -al command to list all files in a directory including hidden files, you can create a shortcut command ll using the alias command:
+
+bash
+Copy code
+alias ll='ls -al'
+Now, every time you type ll in the terminal, it will be replaced by ls -al and executed as if you had typed ls -al.
+
+You can view all of your defined aliases by running the alias command without any arguments. You can also remove an alias by using the unalias command followed by the alias name:
+
+bash
+Copy code
+unalias ll
+This will remove the ll alias and you won't be able to use it as a shortcut anymore.
