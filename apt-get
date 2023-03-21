@@ -1,0 +1,27 @@
+apt-get
+
+The correct command is apt-get (not apt get), and it is a command-line tool for handling package management in Debian-based Linux distributions, including Ubuntu. It is used to install, remove, update and upgrade packages on the system.
+
+Here are some commonly used apt-get commands:
+
+sudo apt-get update: This command updates the package lists on your system.
+
+sudo apt-get upgrade: This command upgrades all the packages on your system to their latest versions.
+
+sudo apt-get install package-name: This command installs a new package on your system.
+
+sudo apt-get remove package-name: This command removes a package from your system.
+
+sudo apt-get autoremove: This command removes any packages that are no longer needed by your system.
+
+sudo apt-get search search-term: This command searches for packages that match the given search term.
+
+sudo apt-get show package-name: This command displays information about a specific package, including its version, size, and dependencies.
+
+sudo apt-get list: This command displays a list of all installed packages on your system.
+
+sudo apt-get clean: This command removes all downloaded package files from the package cache.
+
+sudo apt-get purge package-name: This command removes a package and its configuration files from your system.
+
+Note that apt is a newer, more user-friendly interface for apt-get, but apt-get is still commonly used and is more suitable for scripting and automation purposes.
