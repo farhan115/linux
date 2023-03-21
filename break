@@ -1,0 +1,13 @@
+break
+
+The break command in Linux is used in loops (for, while, until) and switch statements to exit the loop or switch statement before it has completed all of its iterations. It is a command-line tool that can be used to control the flow of execution in shell scripts.
+
+Here are some commonly used break commands:
+
+break: This command is used in a loop to exit the loop prematurely. When the break command is executed, the loop will immediately terminate and control will be passed to the next command after the loop.
+
+break n: This command is used in a nested loop to exit n levels of loops. For example, if you have a for loop nested inside a while loop, and you want to exit both loops, you can use the command break 2.
+
+break label: This command is used in a loop that has a label to exit the loop with the specified label. For example, if you have a while loop with a label myloop, you can use the command break myloop to exit the loop.
+
+Note that break can be used in conjunction with if statements and other flow control statements to control the flow of execution in shell scripts. It is a useful tool for creating scripts that automate tasks and processes.
