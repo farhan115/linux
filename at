@@ -1,0 +1,17 @@
+at
+
+The at command in Linux is a utility that allows you to schedule a command to run at a specific time in the future. This can be useful for automating tasks or for running resource-intensive tasks during off-peak hours.
+
+Here are some commonly used at commands:
+
+at time: This command starts the at command-line interface, where you can specify the time at which you want a command to be executed. The time argument should be in a specific format: HH:MM, where HH is the hour in 24-hour format and MM is the minute.
+
+at -f command-file time: This command schedules a command to be executed at the specified time, where command-file is the name of the file that contains the command you want to execute.
+
+atq: This command lists the jobs in the at queue, along with their job numbers and scheduled execution times.
+
+atrm job-number: This command removes a job from the at queue, where job-number is the number of the job you want to remove.
+
+at -l: This command lists all the jobs in the at queue, along with their scheduled execution times and job numbers.
+
+Note that at requires the atd daemon to be running, which is responsible for executing the scheduled commands. The at command is usually available on most Linux distributions by default.
