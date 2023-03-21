@@ -1,0 +1,17 @@
+basename
+
+The basename command in Linux is used to extract the base name (the last part) of a file name or a path. It is a command-line tool that can be used in scripts or in the terminal.
+
+Here are some commonly used basename commands:
+
+basename path: This command prints the base name of the file or directory specified by path. For example, basename /usr/local/bin will print bin.
+
+basename path suffix: This command removes the specified suffix from the end of the base name of the file or directory specified by path. For example, basename file.txt .txt will print file.
+
+basename -a path1 path2 ...: This command prints the base names of multiple files or directories specified by path1, path2, etc.
+
+basename --suffix=suffix path: This command removes the specified suffix from the end of the base name of the file or directory specified by path. This is equivalent to basename path suffix.
+
+basename --help: This command displays the help message for basename, which includes a list of available options and usage examples.
+
+Note that basename only operates on the last component of the path name, which means it ignores any leading directories in the path. If you need to extract the directory name of a path, you can use the dirname command.
