@@ -1,0 +1,20 @@
+bzdiff
+
+The bzdiff command in Linux is used to compare and display the differences between two bzip2 compressed files. It is a command-line tool that can be used to compare the contents of compressed files.
+
+Here are some commonly used bzdiff commands:
+
+bzdiff file1.bz2 file2.bz2: This command compares the contents of the two specified compressed files file1.bz2 and file2.bz2 and displays the differences between them.
+
+bzdiff -c file1.bz2 file2.bz2: This command compares the contents of the two specified compressed files file1.bz2 and file2.bz2 and displays the differences between them in a context format.
+
+bzdiff -u file1.bz2 file2.bz2: This command compares the contents of the two specified compressed files file1.bz2 and file2.bz2 and displays the differences between them in a unified format.
+
+bzdiff --help: This command displays the help message for bzdiff, which includes a list of available options and usage examples.
+
+Note that bzdiff is a command-line tool that is used to compare the contents of two compressed files. It is useful for verifying that a compressed file has not been corrupted during transmission or storage, or for identifying changes between two different versions of the same file.
+
+
+
+
+
