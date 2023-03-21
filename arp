@@ -1,0 +1,17 @@
+arp
+
+The arp command in Linux is used to manipulate the Address Resolution Protocol (ARP) cache. ARP is used to map a network address (such as an IP address) to a physical address (such as a MAC address). The arp command can display and modify the ARP cache on a Linux system.
+
+Here are some commonly used arp commands:
+
+arp: This command displays the current contents of the ARP cache.
+
+arp -a: This command displays the current contents of the ARP cache in a more detailed format.
+
+arp -d ip-address: This command deletes the ARP entry for the specified IP address.
+
+arp -s ip-address mac-address: This command adds a static ARP entry to the cache. The IP address is the network address you want to map to a physical address (MAC address).
+
+arp -n: This command displays the ARP cache without resolving hostnames.
+
+Note that the arp command is often used in troubleshooting network connectivity issues and is useful for diagnosing problems related to ARP cache.
