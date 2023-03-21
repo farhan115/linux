@@ -1,0 +1,15 @@
+base32
+
+The base32 command in Linux is a command-line tool that can be used to encode and decode data using the base32 encoding scheme. Base32 is a method of encoding binary data as text that uses a 32-character set of letters and numbers. It is commonly used for representing data in situations where it needs to be human-readable and/or transmitted via text-based protocols.
+
+Here are some commonly used base32 commands:
+
+base32 input-file: This command encodes the data in the specified input-file using base32 encoding and prints the result to the standard output.
+
+base32 -d input-file: This command decodes the data in the specified input-file using base32 decoding and prints the result to the standard output.
+
+base32 -w width input-file: This command encodes the data in the specified input-file using base32 encoding and prints the result to the standard output, with the output lines wrapped at the specified width (default is 76 characters).
+
+base32 --help: This command displays the help message for base32, which includes a list of available options and usage examples.
+
+Note that base32 is a one-way encoding scheme, which means that the original data cannot be recovered from the encoded text. Base32 is often used for representing cryptographic hashes, checksums, and other types of data that need to be transmitted or stored in a human-readable format.
