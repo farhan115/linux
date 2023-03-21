@@ -1,0 +1,20 @@
+bzip2
+
+bzip2 is a command-line compression tool in Linux that is used to compress and decompress files. It uses the Burrows-Wheeler block sorting text compression algorithm and Huffman coding to compress files. The resulting compressed files have the .bz2 file extension.
+
+Here are some commonly used bzip2 commands:
+
+bzip2 filename: This command compresses the specified filename and creates a new compressed file with the extension .bz2. The original file is deleted by default.
+
+bzip2 -d filename.bz2: This command decompresses the specified compressed file filename.bz2 and creates a new uncompressed file. The original compressed file is deleted by default.
+
+bzip2 -z filename: This command compresses the specified filename and creates a new compressed file with the extension .bz2. The original file is retained.
+
+bzip2 -k filename.bz2: This command decompresses the specified compressed file filename.bz2 and creates a new uncompressed file. The original compressed file is retained.
+
+bzip2 -t filename.bz2: This command tests the integrity of the specified compressed file filename.bz2.
+
+Note that bzip2 is a command-line tool that is primarily used for compressing large files. It is often used in combination with the tar command to create compressed archives. For example, tar -cvjf archive.tar.bz2 directory creates a compressed archive of the directory using bzip2 compression.
+
+
+
