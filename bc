@@ -1,0 +1,17 @@
+bc
+
+The bc command in Linux is a command-line calculator that can be used to perform arithmetic operations on numbers. It is a powerful tool that can handle integers, floating-point numbers, and complex numbers, and supports a variety of mathematical functions and operations.
+
+Here are some commonly used bc commands:
+
+bc: This command starts the bc command-line interface, where you can type in expressions and perform arithmetic operations. For example, you can type 5 + 3 and press Enter to get the result 8.
+
+bc -l: This command starts the bc command-line interface with the math library loaded, which provides support for mathematical functions like sine, cosine, log, etc.
+
+echo "expression" | bc: This command pipes the specified expression to bc, which evaluates the expression and prints the result to the standard output.
+
+bc -q file: This command reads the expressions from the specified file and evaluates them in sequence. The -q option suppresses the output of each expression.
+
+bc --help: This command displays the help message for bc, which includes a list of available options and usage examples.
+
+Note that bc uses a syntax that is similar to C programming language, which means that it supports variables, loops, conditional statements, and other programming constructs. This makes bc a powerful tool for performing complex calculations and for creating scripts that automate mathematical tasks.
