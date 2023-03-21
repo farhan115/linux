@@ -1,0 +1,13 @@
+bzcmp
+
+The bzcmp command in Linux is used to compare two bzip2 compressed files and determine whether they are identical or not. It is a command-line tool that can be used to check the integrity of compressed files.
+
+Here are some commonly used bzcmp commands:
+
+bzcmp file1.bz2 file2.bz2: This command compares the contents of the two specified compressed files file1.bz2 and file2.bz2 and prints a message indicating whether they are identical or not.
+
+bzcmp -s file1.bz2 file2.bz2: This command suppresses the output of bzcmp and only returns the exit status, which is 0 if the files are identical, and 1 if they are not.
+
+bzcmp --help: This command displays the help message for bzcmp, which includes a list of available options and usage examples.
+
+Note that bzcmp is a command-line tool that is used to compare the contents of two compressed files. It is useful for verifying that a compressed file has not been corrupted during transmission or storage.
