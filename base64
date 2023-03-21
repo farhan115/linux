@@ -1,0 +1,18 @@
+base64
+
+The base64 command in Linux is a command-line tool that can be used to encode and decode data using the base64 encoding scheme. Base64 is a method of encoding binary data as text that uses a 64-character set of letters, numbers, and symbols. It is commonly used for representing data in situations where it needs to be human-readable and/or transmitted via text-based protocols.
+
+Here are some commonly used base64 commands:
+
+base64 input-file: This command encodes the data in the specified input-file using base64 encoding and prints the result to the standard output.
+
+base64 -d input-file: This command decodes the data in the specified input-file using base64 decoding and prints the result to the standard output.
+
+base64 -w width input-file: This command encodes the data in the specified input-file using base64 encoding and prints the result to the standard output, with the output lines wrapped at the specified width (default is 76 characters).
+
+base64 --help: This command displays the help message for base64, which includes a list of available options and usage examples.
+
+Note that base64 is a one-way encoding scheme, which means that the original data cannot be recovered from the encoded text. Base64 is often used for representing binary data in situations where it needs to be transmitted or stored in a human-readable format, such as in email attachments or in URLs.
+
+
+
