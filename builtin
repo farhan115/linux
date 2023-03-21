@@ -1,0 +1,19 @@
+builtin
+
+The builtin command in Linux is used to execute shell built-in commands instead of external commands. Built-in commands are commands that are part of the shell itself, and are executed directly by the shell instead of by a separate process. This can be faster and more efficient than executing external commands.
+
+Here are some commonly used builtin commands:
+
+builtin type command: This command displays the type of the specified command, which can be a built-in command, an external command, or an alias.
+
+builtin cd directory: This command changes the current working directory to directory.
+
+builtin alias: This command displays a list of all defined aliases.
+
+builtin unalias name: This command removes the specified alias name.
+
+builtin echo: This command displays a message on the terminal.
+
+builtin exit: This command exits the shell.
+
+Note that builtin is used to explicitly invoke shell built-in commands. If a command has the same name as a built-in command, the external command will be executed by default. However, you can use the type command to check the type of a command and determine whether it is a built-in command or an external command.
