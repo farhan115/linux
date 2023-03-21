@@ -1,0 +1,22 @@
+bg
+
+The bg command in Linux is used to send a suspended or stopped job to the background, allowing it to continue running while you continue to use the terminal. It is a command-line tool that can be used in conjunction with the jobs command to manage background jobs.
+
+Here are some commonly used bg commands:
+
+bg %job-number: This command sends the job with the specified job-number to the background. For example, bg %1 will send the first job in the job list to the background.
+
+bg %command: This command sends the job that matches the specified command to the background. For example, bg %firefox will send the Firefox job to the background.
+
+bg: This command sends the most recent suspended or stopped job to the background.
+
+jobs: This command lists all of the jobs that are currently running or stopped in the current terminal session, along with their job numbers and status.
+
+fg %job-number: This command brings the job with the specified job-number to the foreground, allowing you to interact with it again. For example, fg %1 will bring the first job in the job list to the foreground.
+
+fg %command: This command brings the job that matches the specified command to the foreground. For example, fg %firefox will bring the Firefox job to the foreground.
+
+Note that bg and fg are used to manage background and foreground jobs in the current terminal session. Jobs that are sent to the background will continue to run until they complete or until they are terminated using the kill command or a similar method.
+
+
+
