@@ -1,0 +1,15 @@
+ar
+
+I'm sorry, but there is no ar command in Linux. However, there is a Linux utility called ar (short for "archive"), which is used to create, modify, and extract files from archives. It is commonly used to create static libraries.
+
+Here are some commonly used ar commands:
+
+ar rcs libname.a file1.o file2.o ...: This command creates a static library named libname.a from object files file1.o, file2.o, etc. The r, c, and s options respectively replace existing files, create a new archive if it doesn't exist, and writes an index into the archive.
+
+ar t libname.a: This command lists the contents of the archive libname.a.
+
+ar x libname.a: This command extracts all files from the archive libname.a into the current directory.
+
+ar d libname.a file.o: This command deletes the file file.o from the archive libname.a.
+
+Note that ar is a low-level tool, and its use is usually reserved for developers or advanced users.
