@@ -1,0 +1,22 @@
+aspell
+
+The aspell command in Linux is a spell checker program that can be used to check the spelling of text files in various formats, such as plain text, LaTeX, HTML, and more. It is a command-line tool that can be used in the terminal or in shell scripts.
+
+Here are some commonly used aspell commands:
+
+aspell check filename: This command checks the spelling of the file specified by filename.
+
+aspell check < filename: This command checks the spelling of text from standard input. This can be useful for checking the spelling of text from pipes or redirects.
+
+aspell -c filename: This command checks the spelling of the file specified by filename and displays suggested corrections for any misspelled words.
+
+aspell list < filename: This command lists all unique misspelled words found in the text from standard input.
+
+aspell dump dicts: This command displays a list of all available dictionaries for aspell.
+
+aspell change dict newdict: This command changes the current dictionary to newdict. The current dictionary is used for all subsequent aspell commands until it is changed again.
+
+Note that aspell supports many different languages and can be customized to add new words or to exclude specific words from the dictionary.
+
+
+
