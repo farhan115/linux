@@ -1,0 +1,13 @@
+bzless
+
+The bzless command in Linux is used to view the contents of a bzip2 compressed file, one page at a time, using the less pager. It is a command-line tool that can be used to view the contents of compressed files without the need to decompress them first.
+
+Here are some commonly used bzless commands:
+
+bzless file.bz2: This command displays the contents of the specified compressed file file.bz2, one page at a time. You can use the arrow keys to navigate through the file, and the q key to exit.
+
+bzless -c file.bz2: This command displays the compressed contents of the specified compressed file file.bz2, without decompressing it, one page at a time.
+
+bzless --help: This command displays the help message for bzless, which includes a list of available options and usage examples.
+
+Note that bzless is a command-line tool that is used to view the contents of a compressed file, one page at a time. It is useful for quickly viewing the contents of compressed files without the need to decompress them first.
