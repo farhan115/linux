@@ -1,0 +1,25 @@
+apt 
+
+The apt command is a package manager used in Debian-based Linux distributions, including Ubuntu. It allows you to install, update, and remove packages from your system.
+
+Here are some commonly used apt commands:
+
+sudo apt update: This command updates the package lists on your system.
+
+sudo apt upgrade: This command upgrades all the packages on your system to their latest versions.
+
+sudo apt install package-name: This command installs a new package on your system.
+
+sudo apt remove package-name: This command removes a package from your system.
+
+sudo apt autoremove: This command removes any packages that are no longer needed by your system.
+
+sudo apt search search-term: This command searches for packages that match the given search term.
+
+sudo apt show package-name: This command displays information about a specific package, including its version, size, and dependencies.
+
+sudo apt list: This command displays a list of all installed packages on your system.
+
+sudo apt clean: This command removes all downloaded package files from the package cache.
+
+sudo apt purge package-name: This command removes a package and its configuration files from your system.
