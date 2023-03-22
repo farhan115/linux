@@ -1,0 +1,17 @@
+cal
+
+The cal command in Linux is used to display a calendar on the terminal. By default, it displays the current month's calendar, but you can also specify a month and year to display a specific month's calendar.
+
+Here are some commonly used cal commands:
+
+cal: This command displays the current month's calendar on the terminal.
+
+cal -m month year: This command displays the calendar for the specified month and year.
+
+cal -y year: This command displays a calendar for the entire year.
+
+cal -3: This command displays the current month's calendar along with the previous and next month's calendars.
+
+cal --help: This command displays the help message for cal, which includes a list of available options and usage examples.
+
+Note that cal is a simple command-line tool that is useful for quickly viewing a calendar on the terminal. It can be used to plan and schedule events, or to check the date for a specific day or month.
