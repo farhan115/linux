@@ -1,0 +1,25 @@
+case
+
+In Linux, the case statement is used to create a conditional structure that allows you to test multiple conditions and execute different code based on the condition that is true. It is often used within shell scripts to handle different user inputs or to perform different actions based on system variables.
+
+Here is an example of using the case statement in a shell script:
+
+bash
+Copy code
+#!/bin/bash
+
+echo "Enter a letter:"
+read letter
+
+case $letter in
+    [Aa]) echo "The letter is A";;
+    [Bb]) echo "The letter is B";;
+    [Cc]) echo "The letter is C";;
+    [Dd]) echo "The letter is D";;
+    *) echo "The letter is not A, B, C, or D";;
+esac
+In this example, we first prompt the user to enter a letter using the read command. We then use the case statement to test the inputted letter against several possible patterns using the [...] notation. For each pattern, we specify the code to execute when the pattern matches using the ;; delimiter. Finally, we use the * wildcard pattern to match any other input that does not match the previous patterns.
+
+When you run this script and enter a letter, it will output a message that tells you which letter was entered, or if the letter does not match any of the specified patterns.
+
+Note that the case statement is a useful way to handle multiple conditions in a shell script, and can be used to create more complex conditional structures than the simple if-else statement.
