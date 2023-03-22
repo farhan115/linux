@@ -1,0 +1,25 @@
+caller
+
+The caller command is a shell built-in command in Linux that is used to display the caller function of a shell function or script. It is used to trace the call stack of shell functions and scripts, and to debug shell scripts.
+
+Here is an example of using the caller command:
+
+bash
+Copy code
+#!/bin/bash
+
+function my_function {
+    echo "Caller function: $(caller)"
+}
+
+my_function
+In this example, we define a shell function called my_function that simply echoes the caller function using the caller command. We then call the my_function from the main script.
+
+When you run this script, it will output the following:
+
+bash
+Copy code
+Caller function: 4 my_function
+This output tells us that the my_function was called from line 4 of the script, and that the name of the caller function is also my_function.
+
+Note that the caller command only works within shell functions or scripts, and not in interactive shell sessions. It is useful for debugging complex shell scripts and tracing the call stack of functions.
