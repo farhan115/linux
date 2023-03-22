@@ -4,8 +4,7 @@ In Linux, the case statement is used to create a conditional structure that allo
 
 Here is an example of using the case statement in a shell script:
 
-bash
-Copy code
+
 #!/bin/bash
 
 echo "Enter a letter:"
