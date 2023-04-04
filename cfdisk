@@ -1,0 +1,24 @@
+cfdisk
+
+The cfdisk command is a Linux command used to create, modify, and delete disk partitions using a text-based interface. It is a tool that is commonly used for partitioning hard drives on Linux systems.
+
+Syntax:
+
+css
+Copy code
+cfdisk [options] device
+Example usage:
+
+bash
+Copy code
+cfdisk /dev/sda
+This command will start cfdisk and open the disk partitioning interface for the device /dev/sda.
+
+Options:
+
+Some common options available for the cfdisk command include:
+
+-z: disables the use of extended partitions.
+-f: forces the creation of a partition table without prompting for confirmation.
+-r: forces the removal of a partition without prompting for confirmation.
+Note that cfdisk should be used with caution, as it has the potential to delete or modify data on the disk. It is recommended to back up important data before using this command.
