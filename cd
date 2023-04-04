@@ -1,0 +1,25 @@
+cd
+
+The cd command is a Linux command used to change the current working directory of the terminal session.
+
+Syntax:
+
+bash
+Copy code
+cd [directory_path]
+Example usage:
+
+bash
+Copy code
+cd /home/user/documents/
+This command will change the current working directory to /home/user/documents/.
+
+If no argument is provided, cd changes the current working directory to the user's home directory.
+
+Options:
+
+-: changes the current directory to the previous working directory.
+..: moves the current directory up one level in the directory tree.
+.: represents the current directory (used to specify the current directory in pathnames).
+~: represents the user's home directory (used to specify the home directory in pathnames).
+Note that the cd command only affects the current terminal session. If you open a new terminal session, the working directory will be the default home directory for the user.
