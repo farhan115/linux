@@ -1,0 +1,26 @@
+chattr
+
+The chattr command is a Linux command used to modify file attributes on a file system level. It can be used to change the properties of a file, including permissions, ownership, and other security settings. The chattr command is often used to protect important system files and directories from accidental deletion or modification.
+
+Syntax:
+
+scss
+Copy code
+chattr [options] file(s)
+Example usage:
+
+css
+Copy code
+chattr +i important_file.txt
+This command will set the "immutable" attribute on important_file.txt, which prevents the file from being modified, deleted, or renamed by any user, including the root user.
+
+Options:
+
+Some common options available for the chattr command include:
+
++attribute: adds an attribute to the file.
+-attribute: removes an attribute from the file.
+i: sets the "immutable" attribute on the file.
+a: sets the "append-only" attribute on the file.
+u: sets the "undeletable" attribute on the file.
+Note that the chattr command requires root privileges to modify system files and directories. Use with caution, as incorrect usage of this command can cause system instability or data loss.
