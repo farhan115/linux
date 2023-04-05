@@ -1,0 +1,25 @@
+clear
+
+The clear command in Linux is used to clear the terminal screen. When executed, the clear command will move the current cursor position to the top-left corner of the terminal window and erase all text and output from the previous commands. This makes the terminal window appear blank and ready for new input. The syntax for the clear command is simply:
+
+arduino
+Copy code
+clear
+Here is an example of how to use the clear command:
+
+Open a terminal window.
+
+Execute some commands that produce output on the screen.
+
+bash
+Copy code
+ls
+cd mydirectory
+pwd
+To clear the screen and start with a blank terminal window, simply type:
+arduino
+Copy code
+clear
+This will clear the screen and leave the cursor at the top-left corner of the terminal window, ready for new input.
+
+Note that the clear command is a simple and useful command, but it is not a system command and is not essential for the normal operation of the Linux system.
