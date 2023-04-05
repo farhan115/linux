@@ -1,0 +1,21 @@
+chsh
+
+The chsh command in Linux is used to change a user's default login shell. The syntax for the chsh command is:
+
+css
+Copy code
+chsh [OPTIONS] USERNAME
+Here, USERNAME is the login name of the user whose default shell you want to change.
+
+Some common options for the chsh command are:
+
+-s SHELL: Set the user's default shell to SHELL.
+-h: Display the help message and exit.
+Here's an example of how to use the chsh command:
+
+bash
+Copy code
+chsh -s /bin/zsh jsmith
+This sets the default shell for the user jsmith to /bin/zsh.
+
+Note that you need to have appropriate permissions to change a user's default login shell. Typically, only the system administrator or a user with root privileges can use the chsh command. Additionally, changing a user's default login shell may have implications for their ability to log in and use the system, so it is important to be careful when using the chsh command.
