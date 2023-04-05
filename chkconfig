@@ -1,0 +1,40 @@
+chkconfig
+
+The chkconfig command in Linux is used to manage services and daemons that run automatically during system startup. It allows you to enable or disable a service to start automatically at boot time. The chkconfig command reads the configuration information from the /etc/init.d directory and creates and removes the appropriate symbolic links in the /etc/rc[0-6].d directories to start or stop services.
+
+The syntax for the chkconfig command is:
+
+css
+Copy code
+chkconfig [OPTIONS] SERVICE
+Here, SERVICE is the name of the service that you want to manage.
+
+Some common options for the chkconfig command are:
+
+--add: Add a new service to the system.
+--del: Remove a service from the system.
+--list: List all services and their current runlevels.
+--level LEVELS: Set the runlevels for the service. LEVELS is a comma-separated list of runlevels. For example, 3,4,5 means the service will start in runlevels 3, 4, and 5.
+SERVICE on: Enable a service to start automatically at boot time.
+SERVICE off: Disable a service from starting automatically at boot time.
+Here are some examples of how to use the chkconfig command:
+
+To list all services and their current runlevels:
+css
+Copy code
+chkconfig --list
+This displays a list of all services and their current runlevels.
+
+To enable a service to start automatically at boot time:
+csharp
+Copy code
+chkconfig httpd on
+This enables the httpd service to start automatically at boot time.
+
+To disable a service from starting automatically at boot time:
+vbnet
+Copy code
+chkconfig httpd off
+This disables the httpd service from starting automatically at boot time.
+
+Note that you need to have appropriate permissions to manage services and daemons using the chkconfig command. Typically, only the system administrator or a user with root privileges can use the chkconfig command.
