@@ -1,0 +1,38 @@
+chmod
+
+The chmod command in Linux is used to change the permissions (read, write, execute) of a file or directory. The syntax for the chmod command is:
+
+bash
+Copy code
+chmod [OPTIONS] MODE FILE...
+Here, MODE is a string that represents the new permission settings for the specified file(s), and FILE is the path to the file or files whose permissions will be changed.
+
+The MODE argument can be specified in different ways:
+
+Symbolic mode: Using letters (u, g, o, a) and symbols (+, -, =) to represent user, group, others, and the permission to add, remove, or set the permission. For example, u+x adds execute permission to the owner of the file.
+Absolute mode: Using a three-digit number (0-7) to represent the permission for the user, group, and others in binary. For example, chmod 755 myfile.txt sets read, write, and execute permission for the owner, and read and execute permission for group and others.
+Some common options for the chmod command are:
+
+-R: Recursively change permissions of directories and their contents.
+--reference=REF_FILE: Use the permission of REF_FILE as a reference for the file(s) specified. This is useful if you want to set the same permission for one file as another file.
+Here are some examples of how to use the chmod command:
+
+To add execute permission for the owner of a file:
+bash
+Copy code
+chmod u+x myfile.txt
+This adds execute permission to the owner of myfile.txt.
+
+To set read, write, and execute permission for the owner, and read and execute permission for group and others:
+bash
+Copy code
+chmod 755 myfile.txt
+This sets read, write, and execute permission for the owner of myfile.txt, and read and execute permission for group and others.
+
+To recursively change the permissions of a directory and its contents:
+bash
+Copy code
+chmod -R 644 /path/to/mydirectory
+This sets read and write permission for the owner of all files in mydirectory and its subdirectories, and read permission for group and others.
+
+Note that you need to have appropriate permissions to change the permissions of a file or directory. If you are not the owner of the file or not a member of the group that owns the file, you may need to use sudo or have root privileges to execute the chmod command.
