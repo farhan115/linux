@@ -1,0 +1,5 @@
+continue
+
+continue is not a Linux command, but rather a keyword used in programming languages like Python, C, and Java to continue the execution of a loop without executing any statements that follow it within the loop body.
+
+In Linux, the continue keyword can also be used in shell scripting within a while or for loop to skip to the next iteration of the loop. When continue is encountered in the loop, the current iteration of the loop is terminated and the next iteration starts.
