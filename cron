@@ -1,0 +1,20 @@
+cron
+
+cron is a Linux command that is used to schedule commands or scripts to run automatically at a specified time and date. It is a time-based job scheduler in Unix-like operating systems. cron reads the configuration files and schedules the jobs defined in them. The job scheduling syntax is defined in the crontab file.
+
+The syntax of the cron command is as follows:
+
+cron [-f] [-i] [-l log-level] [-L log-level] [-m off/on] [-n] [-r] [-s] [-x [ext,sym]] 
+
+Here,
+
+-f: Forces cron to stay in the foreground, and logs all the messages to the standard output.
+-i: Asks for confirmation before removing any job.
+-l log-level: Specifies the level of logging, where log-level can be 0 (no logging), 1 (log only start of execution), 2 (log start and end of execution), or 4 (log all the messages).
+-L log-level: Sets the log level for the system log.
+-m off/on: Turns mail notifications off/on for the current user.
+-n: Specifies that no action is to be taken on the crontab file.
+-r: Deletes the current user's crontab.
+-s: Forces cron to log messages to the system log.
+-x [ext,sym]: Enables or disables loading of external or symbolic links to files.
+In addition to the cron command, there are other related commands such as crontab, which is used to edit the crontab files, and anacron, which is used to execute commands periodically on a given day.
