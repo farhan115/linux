@@ -1,0 +1,19 @@
+curl
+
+The curl command in Linux is used to transfer data from or to a server using a variety of supported protocols, including HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET, LDAP or FILE.
+
+It is a versatile tool that can be used for a wide range of tasks, such as testing API endpoints, downloading files, sending HTTP requests, and more.
+
+The basic syntax of the curl command is as follows:
+
+curl [options] [URL]
+
+Here, options represent various command-line options that can be used to specify how the request should be made, while URL is the URL of the server or resource to be accessed.
+
+For example, the following command can be used to download a file from a remote server:
+
+curl -O https://example.com/file.txt
+
+This will download the file file.txt from the server example.com and save it to the current directory. The -O option is used to specify that the output file should be named the same as the remote file.
+
+There are many other options that can be used with the curl command to customize its behavior, such as -X to specify the request method, -H to add headers to the request, -d to send data in the request body, and more.
