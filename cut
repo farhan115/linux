@@ -1,0 +1,26 @@
+cut
+
+The cut command in Linux is a text processing command that is used to extract specific columns or fields from a file or output. It can also be used to cut out a specific range of characters from each line of a file or output. The general syntax of the cut command is as follows:
+
+cut OPTION... [FILE]...
+
+Some of the common options used with the cut command are:
+
+-c: specifies the character positions or range of positions to cut from each line.
+-f: specifies the field positions or range of positions to cut from each line, where fields are separated by a delimiter such as a space or tab.
+-d: specifies the delimiter used to separate fields.
+Here are some examples of how the cut command can be used:
+
+To extract the first two columns of a CSV file:
+
+cut -d ',' -f 1,2 file.csv
+
+To extract the first 10 characters of each line of a file:
+
+cut -c 1-10 file.txt
+
+To extract the last field of a tab-separated file:
+
+cut -d $'\t' -f $(awk -F $'\t' '{print NF}' file.tsv | sort -nu | tail -n 1) file.tsv
+
+In the above example, the awk command is used to determine the number of fields in each line of the file, and then sort, tail, and cut are used to extract the last field.
