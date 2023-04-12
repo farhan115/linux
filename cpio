@@ -1,0 +1,28 @@
+cpio
+
+The cpio command in Linux is used to create or extract cpio archives. The cpio command copies files into or out of a cpio or tar archive. It supports several archive formats and can be used as an alternative to the tar command.
+
+The basic syntax of the cpio command is:
+
+cpio [options] < archive
+
+or
+
+cpio [options] > archive
+
+Here are some common options for the cpio command:
+
+-i: extract files from an archive
+-o: create an archive
+-t: list the contents of an archive
+-d: create directories as needed
+-v: verbose output
+Example Usage:
+
+To create an archive:
+
+find /path/to/directory -depth -print0 | cpio --null --create --format=ustar > archive.cpio
+
+To extract an archive:
+
+cpio -idv < archive.cpio
