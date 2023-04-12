@@ -1,0 +1,24 @@
+crontab
+
+crontab is a Linux command used to manage the scheduling of recurring tasks on a system. The crontab command is used to create, edit, and list the cron jobs for a user. The cron daemon runs these jobs automatically on the system at the specified time intervals.
+
+The crontab command has several options, including:
+
+-l: Lists the user's cron jobs
+-e: Edits the user's cron jobs
+-r: Removes the user's cron jobs
+To list a user's cron jobs, you can use the following command:
+
+crontab -l
+
+To edit a user's cron jobs, you can use the following command:
+
+crontab -e
+
+This will open the user's crontab file in the default text editor. Here, you can add or modify the cron jobs.
+
+To remove a user's cron jobs, you can use the following command:
+
+crontab -r
+
+Note that crontab requires elevated permissions to manage the cron jobs of other users.
