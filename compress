@@ -1,0 +1,24 @@
+compress
+
+The compress command is a legacy command used in Linux to compress files. It is a file compression utility that compresses files using the Lempel-Ziv-Welch (LZW) algorithm.
+
+Here's the basic syntax of the compress command:
+compress [OPTIONS] [FILE_NAME]
+
+The options that can be used with the compress command are:
+
+-c : Writes the compressed output to stdout instead of a file.
+-f : Forces compression of the file, even if it is a hard link or a symbolic link.
+-r : Recursively compresses the files in the specified directory and its subdirectories.
+-v : Displays the name of the file being compressed and the percentage of compression achieved.
+For example, to compress a file named "file.txt", you can use the following command:
+
+compress file.txt
+
+This will create a compressed file named "file.txt.Z" in the same directory.
+
+To decompress a file, you can use the uncompress command:
+
+uncompress file.txt.Z
+
+This will decompress the compressed file and create a file named "file.txt" in the same directory.
