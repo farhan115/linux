@@ -1,0 +1,18 @@
+cmp 
+
+cmp is a Linux command used to compare two files byte by byte and display the first byte and line number where they differ. Its basic syntax is as follows:
+
+cmp [OPTION]... FILE1 [FILE2 [SKIP1 [SKIP2]]]
+
+Here, FILE1 and FILE2 are the two files to compare, and SKIP1 and SKIP2 are the number of bytes to skip at the beginning of FILE1 and FILE2 respectively. The available options for cmp include:
+
+-b or --print-bytes: Prints differing bytes in octal format.
+-i or --ignore-initial: Ignores the first SKIP1 bytes in FILE1 and SKIP2 bytes in FILE2.
+-l or --verbose: Prints byte number and differing byte for every difference found.
+-n or --bytes: Specifies the number of bytes to compare.
+-s or --quiet: Suppresses output and only returns exit status.
+-v or --version: Displays version information and exits.
+--help: Displays help information and exits.
+For example, the following command compares the files file1.txt and file2.txt and prints the byte and line number where they differ:
+
+cmp file1.txt file2.txt
