@@ -1,0 +1,21 @@
+csplit
+
+The csplit command is a Linux command used to split a file into smaller files based on specific criteria, such as a delimiter or a regular expression. It is often used to split a large text file into smaller files for easier processing.
+
+The basic syntax of the csplit command is as follows:
+
+csplit [options] file pattern ...
+
+Here, file is the name of the file that you want to split, and pattern specifies the criteria for splitting the file. The csplit command creates one or more output files based on the criteria specified in the pattern.
+
+Some of the commonly used options with the csplit command are:
+
+-f : Specifies the prefix of the output files. By default, the output files are named xx00, xx01, xx02, and so on.
+-n : Specifies the number of digits to be used in the suffix of the output files. The default value is 2.
+-s : Suppresses the summary output.
+-z : Pads the suffix of the output files with zeros.
+For example, the following command splits a file called input.txt into multiple files based on the delimiter ===:
+
+csplit input.txt /===/ {*}
+
+This will create multiple output files named xx00, xx01, xx02, and so on. Each output file will contain the portion of the input file between two consecutive === delimiters.
