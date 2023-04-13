@@ -1,0 +1,44 @@
+dirs
+
+The dirs command in Linux is used to display the directory stack, which is a list of recently visited directories. It is a built-in command in the Bash shell.
+
+Here is the basic syntax for the dirs command:
+
+bash
+Copy code
+dirs [options]
+Here are some commonly used options for the dirs command:
+
+-c: Clears the directory stack.
+-l: Lists the directories in a verbose format, showing the index of each directory.
+-p: Prints the directory stack in a format suitable for use with the pushd and popd commands.
+Here are some examples of how to use the dirs command:
+
+To display the current directory stack:
+bash
+Copy code
+dirs
+This command displays the current directory stack, which is a list of recently visited directories.
+
+To clear the directory stack:
+bash
+Copy code
+dirs -c
+This command clears the directory stack, removing all entries.
+
+To display the directory stack in a verbose format:
+bash
+Copy code
+dirs -l
+This command displays the directory stack in a verbose format, showing the index of each directory.
+
+To print the directory stack in a format suitable for use with the pushd and popd commands:
+bash
+Copy code
+dirs -p
+This command prints the directory stack in a format suitable for use with the pushd and popd commands.
+
+These are just a few examples of how to use the dirs command in Linux. With its powerful capabilities for managing the directory stack, dirs is a useful tool for navigating and managing directories in the Linux command line.
+
+
+
