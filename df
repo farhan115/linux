@@ -1,0 +1,44 @@
+df
+
+The df command in Linux is used to display information about the disk space usage on mounted file systems. It provides a summary of the available and used space on each file system, as well as the total size of each file system.
+
+Here is the basic syntax for the df command:
+
+css
+Copy code
+df [options] [directory]
+Here, directory is the directory to display the disk space information for. If no directory is specified, the df command will display information for all mounted file systems.
+
+Here are some commonly used options for the df command:
+
+-h: Displays the disk space usage in human-readable format, such as "1.5G" or "10K".
+-T: Displays the file system type for each mounted file system.
+-t: Displays disk space information only for file systems of the specified type.
+-x: Displays disk space information for all mounted file systems except those of the specified type.
+Here are some examples of how to use the df command:
+
+To display the disk space information for all mounted file systems:
+bash
+Copy code
+df
+This command displays the disk space information for all mounted file systems, including the file system type, the total size, the used space, the available space, and the mount point.
+
+To display the disk space information in human-readable format:
+bash
+Copy code
+df -h
+This command displays the disk space information for all mounted file systems in human-readable format, such as "1.5G" or "10K".
+
+To display the disk space information only for file systems of a specific type:
+bash
+Copy code
+df -t ext4
+This command displays the disk space information for all mounted file systems of the ext4 file system type.
+
+To display the disk space information for all mounted file systems except those of a specific type:
+bash
+Copy code
+df -x tmpfs
+This command displays the disk space information for all mounted file systems except for those of the tmpfs file system type.
+
+These are just a few examples of how to use the df command in Linux. With its versatile capabilities for displaying disk space information, df is a useful tool for monitoring disk usage on a Linux system.
