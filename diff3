@@ -1,0 +1,36 @@
+diff3
+
+The diff3 command in Linux is used to merge three files with differences into a single file, showing the changes made to each file. It is commonly used for resolving conflicts in code or text files that have been edited by multiple users.
+
+Here is the basic syntax for the diff3 command:
+
+css
+Copy code
+diff3 [options] file1 file2 file3
+Here, file1, file2, and file3 are the three files to merge. The diff3 command will compare the contents of these three files and merge them into a single file, showing the changes made to each file.
+
+Here are some commonly used options for the diff3 command:
+
+-m: Outputs the merged file, with conflicts indicated by special markers.
+-A: Specifies that all changes from each file should be included in the merged file, even if they are duplicates.
+-E: Specifies that changes from each file should be included in the merged file only if they are unique.
+Here are some examples of how to use the diff3 command:
+
+To merge three files and display the merged file with conflict markers:
+Copy code
+diff3 -m file1.txt file2.txt file3.txt > merged.txt
+This command merges the contents of file1.txt, file2.txt, and file3.txt into a single file called merged.txt, with conflicts indicated by special markers.
+
+To merge three files and display all changes from each file in the merged file:
+css
+Copy code
+diff3 -A file1.txt file2.txt file3.txt > merged.txt
+This command merges the contents of file1.txt, file2.txt, and file3.txt into a single file called merged.txt, including all changes from each file, even if they are duplicates.
+
+To merge three files and display only unique changes from each file in the merged file:
+mathematica
+Copy code
+diff3 -E file1.txt file2.txt file3.txt > merged.txt
+This command merges the contents of file1.txt, file2.txt, and file3.txt into a single file called merged.txt, including only unique changes from each file.
+
+These are just a few examples of how to use the diff3 command in Linux. With its powerful capabilities for merging files and resolving conflicts, diff3 is a useful tool for collaborative editing of code or text files.
