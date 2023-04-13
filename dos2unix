@@ -1,0 +1,40 @@
+dos2unix
+
+The dos2unix command in Linux is used to convert text files from the DOS or Windows format (CRLF line endings) to the Unix format (LF line endings). It is a useful tool for ensuring that text files are formatted correctly for use on Unix-based systems.
+
+Here is the basic syntax for the dos2unix command:
+
+css
+Copy code
+dos2unix [options] file
+Here, file is the name of the file to convert. The dos2unix command will convert the line endings of the file from CRLF to LF.
+
+Here are some commonly used options for the dos2unix command:
+
+-n: Only prints the number of CRLF occurrences in the file, without actually converting the file.
+-c: Treats the file as a CSV file, converting CRLF line endings to LF while preserving quoted fields.
+-k: Preserves the file's original timestamp.
+Here are some examples of how to use the dos2unix command:
+
+To convert a file from DOS/Windows format to Unix format:
+Copy code
+dos2unix file.txt
+This command converts the file file.txt from DOS/Windows format to Unix format.
+
+To print the number of CRLF occurrences in a file:
+Copy code
+dos2unix -n file.txt
+This command prints the number of CRLF occurrences in the file file.txt, without actually converting the file.
+
+To convert a CSV file from DOS/Windows format to Unix format:
+r
+Copy code
+dos2unix -c file.csv
+This command converts the CSV file file.csv from DOS/Windows format to Unix format, while preserving quoted fields.
+
+To preserve the original timestamp of a file after converting it:
+Copy code
+dos2unix -k file.txt
+This command converts the file file.txt from DOS/Windows format to Unix format, while preserving the file's original timestamp.
+
+These are just a few examples of how to use the dos2unix command in Linux. With its powerful capabilities for converting text files from DOS/Windows format to Unix format, dos2unix is a useful tool for ensuring compatibility and readability of text files across different systems.
