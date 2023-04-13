@@ -1,0 +1,50 @@
+dig
+
+The dig command in Linux is used to query DNS (Domain Name System) servers to retrieve information about domain names, such as IP addresses, name servers, and other DNS records.
+
+Here is the basic syntax for the dig command:
+
+css
+Copy code
+dig [options] domain_name
+Here, domain_name is the name of the domain to query. The dig command will retrieve information about the domain from a DNS server and display it in the output.
+
+Here are some commonly used options for the dig command:
+
++short: Displays the results in a concise format, showing only the IP addresses or other relevant information.
+-x: Performs a reverse DNS lookup to find the domain name associated with an IP address.
+-t: Specifies the type of DNS record to query, such as A, AAAA, MX, or NS records.
+@: Specifies the DNS server to query.
+Here are some examples of how to use the dig command:
+
+To retrieve the IP address for a domain:
+Copy code
+dig example.com
+This command retrieves the IP address for the example.com domain from a DNS server and displays it in the output.
+
+To retrieve only the IP address for a domain:
+arduino
+Copy code
+dig +short example.com
+This command retrieves the IP address for the example.com domain from a DNS server and displays it in a concise format.
+
+To perform a reverse DNS lookup to find the domain name associated with an IP address:
+Copy code
+dig -x 8.8.8.8
+This command performs a reverse DNS lookup to find the domain name associated with the IP address 8.8.8.8.
+
+To retrieve a specific type of DNS record:
+Copy code
+dig -t MX example.com
+This command retrieves the MX (Mail Exchange) records for the example.com domain from a DNS server.
+
+To query a specific DNS server:
+css
+Copy code
+dig @8.8.8.8 example.com
+This command queries the DNS server at the IP address 8.8.8.8 for information about the example.com domain.
+
+These are just a few examples of how to use the dig command in Linux. With its powerful capabilities for querying DNS servers, dig is a useful tool for troubleshooting network connectivity issues and for managing DNS configurations.
+
+
+
