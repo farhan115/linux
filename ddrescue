@@ -1,0 +1,41 @@
+ddrescue
+
+The ddrescue command in Linux is a data recovery tool that can be used to recover data from damaged disks or partitions. It works by copying data from the damaged disk to a new disk or image file, and making multiple attempts to recover data from damaged sectors.
+
+The basic syntax for the ddrescue command is as follows:
+
+css
+Copy code
+ddrescue [options] input_file output_file [logfile]
+Here, input_file is the damaged disk or partition, and output_file is the destination file or disk where the recovered data will be stored. The logfile is an optional parameter that specifies the location of the log file for ddrescue. The log file is used to track the progress of the recovery process and to resume the recovery process if it is interrupted.
+
+Here are some commonly used options for the ddrescue command:
+
+-n or --no-scrape: Specifies that ddrescue should not try to recover data from bad sectors that cannot be read.
+-r or --retry-passes: Specifies the maximum number of retry passes for ddrescue.
+-S or --sparse: Specifies that ddrescue should create a sparse output file, where blocks of zeros are not written to the output file.
+-c or --cluster-size: Specifies the size of the data clusters that ddrescue reads from the input file.
+Here are some examples of how to use the ddrescue command:
+
+To recover data from a damaged disk and store it in an image file:
+arduino
+Copy code
+ddrescue /dev/sda1 image.img logfile
+This command recovers data from the first partition of the /dev/sda disk and stores it in an image file called image.img. The logfile parameter specifies the location of the log file for ddrescue.
+
+To recover data from a damaged disk and store it in a new disk:
+bash
+Copy code
+ddrescue /dev/sda1 /dev/sdb1 logfile
+This command recovers data from the first partition of the /dev/sda disk and stores it in a new disk called /dev/sdb1. The logfile parameter specifies the location of the log file for ddrescue.
+
+To recover data from a damaged disk and display the progress of the recovery process:
+bash
+Copy code
+ddrescue -n -r 3 /dev/sda1 /dev/sdb1 logfile -v
+This command recovers data from the first partition of the /dev/sda disk and stores it in a new disk called /dev/sdb1. The -n and -r options specify that ddrescue should not try to recover data from bad sectors that cannot be read, and that it should make up to 3 retry passes to recover data. The -v option specifies that ddrescue should display the progress of the recovery process.
+
+These are just a few examples of how to use the ddrescue command in Linux. With its powerful data recovery capabilities, ddrescue is a useful tool for recovering data from damaged disks or partitions.
+
+
+
