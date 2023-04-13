@@ -1,0 +1,30 @@
+dc
+
+The dc command in Linux is a reverse-polish notation (RPN) calculator that operates on the top two items on the stack. It is a command-line tool that can perform a wide range of mathematical operations, including arithmetic, trigonometric, and exponential functions.
+
+To start dc, simply open a terminal and type dc followed by Enter. Once you start dc, you will see a prompt where you can enter your calculations. By default, dc uses the RPN calculator mode, where you first enter the numbers and then the operator. For example, to add two numbers, you would enter them one at a time and then the + operator:
+
+diff
+Copy code
+1
+2
++
+This will output 3, which is the sum of 1 and 2.
+
+Here are some commonly used dc commands:
+
++: Add the top two items on the stack.
+-: Subtract the top item on the stack from the second item on the stack.
+*: Multiply the top two items on the stack.
+/: Divide the second item on the stack by the top item on the stack.
+%: Calculate the modulus of the second item on the stack by the top item on the stack.
+p: Print the top item on the stack.
+d: Duplicate the top item on the stack.
+f: Push the current scale factor onto the stack.
+r: Pop the top item on the stack and set the scale factor to its value.
+In addition to the basic arithmetic operations, dc also supports a wide range of mathematical functions, including trigonometric and exponential functions. To use these functions, you need to prefix the function name with the letter l (for "library"). For example, to calculate the sine of an angle in degrees, you would use the lsin function:
+
+Copy code
+45
+lsin
+This will output 0.707107, which is the sine of 45 degrees.
