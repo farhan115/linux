@@ -1,0 +1,41 @@
+diff
+
+The diff command in Linux is used to compare two files and display the differences between them. It is a useful tool for identifying changes made to a file, or for comparing two versions of a file to see what has been added, removed, or modified.
+
+Here is the basic syntax for the diff command:
+
+css
+Copy code
+diff [options] file1 file2
+Here, file1 and file2 are the two files to compare. The diff command will compare the contents of these two files and display the differences between them.
+
+Here are some commonly used options for the diff command:
+
+-u: Displays the differences in the unified format, which is commonly used for patch files.
+-c: Displays the differences in the context format, which provides more context around the changes.
+-i: Ignores changes in case when comparing files.
+-r: Recursively compares directories and their contents.
+Here are some examples of how to use the diff command:
+
+To display the differences between two files:
+Copy code
+diff file1.txt file2.txt
+This command compares the contents of file1.txt and file2.txt, and displays the differences between them.
+
+To display the differences in the unified format:
+Copy code
+diff -u file1.txt file2.txt
+This command compares the contents of file1.txt and file2.txt, and displays the differences in the unified format.
+
+To display the differences in the context format:
+r
+Copy code
+diff -c file1.txt file2.txt
+This command compares the contents of file1.txt and file2.txt, and displays the differences in the context format.
+
+To recursively compare two directories:
+Copy code
+diff -r dir1 dir2
+This command recursively compares the contents of dir1 and dir2, and displays the differences between them.
+
+These are just a few examples of how to use the diff command in Linux. With its powerful capabilities for comparing files and directories, diff is a useful tool for identifying changes in a file or directory, and for tracking changes over time.
