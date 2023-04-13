@@ -1,0 +1,35 @@
+dirname
+
+The dirname command in Linux is used to extract the directory component from a given path or file name. It is used to return the directory path of a file path or name.
+
+Here is the basic syntax for the dirname command:
+
+bash
+Copy code
+dirname [options] path
+Here, path is the path or file name to extract the directory component from. The dirname command will return the directory component of the path or file name.
+
+Here are some commonly used options for the dirname command:
+
+-z: Delimits output with a null character instead of a newline.
+Here are some examples of how to use the dirname command:
+
+To extract the directory path from a file path:
+bash
+Copy code
+dirname /home/user/Documents/example.txt
+This command returns the directory path /home/user/Documents.
+
+To extract the directory path from a file name:
+bash
+Copy code
+dirname example.txt
+This command returns the current directory, represented by ..
+
+To use the output of dirname in a command:
+bash
+Copy code
+cd $(dirname /home/user/Documents/example.txt)
+This command changes the current directory to /home/user/Documents, which is the directory path of the file example.txt.
+
+These are just a few examples of how to use the dirname command in Linux. With its simple yet powerful capabilities for extracting the directory component from a given path or file name, dirname is a useful tool for navigating and managing file paths in the Linux command line.
