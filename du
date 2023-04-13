@@ -1,0 +1,49 @@
+du
+
+The du command in Linux is used to estimate the space used by a file or directory. It is a useful tool for analyzing disk usage and identifying which files and directories are taking up the most space.
+
+Here is the basic syntax for the du command:
+
+css
+Copy code
+du [options] [directory or file]
+Here, directory or file is the name of the directory or file to analyze disk usage for. If no directory or file is specified, the du command will analyze disk usage for the current directory.
+
+Here are some commonly used options for the du command:
+
+-s: Displays only a summary of the total disk usage.
+-h: Displays disk usage in a human-readable format, such as "10M" or "2G".
+-c: Displays a grand total of the disk usage for all files and directories.
+Here are some examples of how to use the du command:
+
+To display the disk usage of a directory:
+bash
+Copy code
+du directory/
+This command displays the estimated disk usage of the specified directory and its contents.
+
+To display the disk usage of a file:
+bash
+Copy code
+du file.txt
+This command displays the estimated disk usage of the specified file.
+
+To display the total disk usage of a directory and its contents:
+bash
+Copy code
+du -s directory/
+This command displays a summary of the total disk usage of the specified directory and its contents.
+
+To display disk usage in a human-readable format:
+bash
+Copy code
+du -h directory/
+This command displays the estimated disk usage of the specified directory and its contents in a human-readable format.
+
+To display the grand total of the disk usage for all files and directories:
+bash
+Copy code
+du -c directory/
+This command displays the estimated disk usage of the specified directory and its contents, and a grand total of the disk usage for all files and directories.
+
+These are just a few examples of how to use the du command in Linux. With its powerful capabilities for estimating disk usage and identifying space-hogging files and directories, du is a useful tool for managing disk space on Linux systems.
