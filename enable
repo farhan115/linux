@@ -1,0 +1,22 @@
+enable
+
+The "enable" command in Linux is used to enable or disable shell built-in commands and functions.
+
+The basic syntax of the "enable" command is as follows:
+
+bash
+Copy code
+enable [options] name ...
+Replace "name" with the name of the shell built-in command or function you want to enable or disable.
+
+For example, to enable the "echo" command, you can use the following command:
+
+bash
+Copy code
+enable echo
+If you want to disable the "echo" command, you can use the following command:
+
+bash
+Copy code
+enable -n echo
+The "enable" command also supports various options, such as "-a" to display all enabled shell built-ins, "-f" to enable a function definition, and "-n" to disable a shell built-in. You can use the "help enable" command to display information about the usage and options of the command.
