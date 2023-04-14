@@ -1,0 +1,24 @@
+ethtool
+The "ethtool" command in Linux is used to display or change the settings of Ethernet network interfaces.
+
+The basic syntax of the "ethtool" command is as follows:
+
+css
+Copy code
+ethtool [options] device
+Replace "device" with the name of the Ethernet network interface you want to display or change the settings for.
+
+For example, to display the settings of the "eth0" network interface, you can use the following command:
+
+Copy code
+ethtool eth0
+This will display information such as the link speed, duplex mode, and Wake-on-LAN settings of the "eth0" interface.
+
+If you want to change the settings of the interface, you can use various options such as "-s" to set the speed and duplex mode, "-A" to set the Wake-on-LAN settings, and "-K" to enable or disable various features such as checksum offloading and TCP segmentation offloading.
+
+For example, to set the "eth0" interface to 100Mbps full duplex mode, you can use the following command:
+
+sql
+Copy code
+ethtool -s eth0 speed 100 duplex full
+The "ethtool" command also supports various other options and features, such as "-p" to blink the LED of the interface, "-t" to run cable diagnostics, and "-g" to display the ring buffer size. You can use the "man ethtool" command to access the manual page of the command and learn more about its usage and options.
