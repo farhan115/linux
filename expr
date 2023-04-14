@@ -1,0 +1,24 @@
+expr
+
+The "expr" command in Linux is used to evaluate expressions and perform arithmetic operations.
+
+The basic syntax of the "expr" command is as follows:
+
+bash
+Copy code
+expr [options] expression
+Replace "expression" with the arithmetic expression you want to evaluate. The expression can contain integers, arithmetic operators (+, -, *, /, %), and parentheses for grouping.
+
+For example, to add two numbers (5 and 3), you can use the following command:
+
+bash
+Copy code
+expr 5 + 3
+This will display the result "8" on the terminal.
+
+The "expr" command also supports various options, such as "-i" to treat the input as octal (base 8), "-f" to treat the input as floating-point numbers, and "-x" to treat the input as hexadecimal (base 16). You can use the "man expr" command to access the manual page of the command and learn more about its usage and options.
+
+Note that the "expr" command is mainly used in shell scripts for performing arithmetic operations and evaluating expressions. However, modern shells such as Bash have built-in arithmetic capabilities and do not require the use of the "expr" command for basic arithmetic operations.
+
+
+
