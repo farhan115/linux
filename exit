@@ -1,0 +1,26 @@
+exit
+
+The "exit" command in Linux is used to exit the current shell session or terminate a running shell script.
+
+The basic syntax of the "exit" command is as follows:
+
+lua
+Copy code
+exit [status]
+Replace "status" with an integer value representing the exit status of the shell or script. If no status is specified, the default exit status is 0 (success).
+
+For example, to exit the current shell session, you can use the following command:
+
+bash
+Copy code
+exit
+This will terminate the current shell session and return control to the parent process.
+
+If you are running a shell script and want to exit the script at a specific point, you can use the "exit" command with a non-zero status to indicate an error condition or abnormal termination. For example, if a script encounters an error and needs to exit with an error status, you can use the following command:
+
+bash
+Copy code
+exit 1
+This will terminate the script and set the exit status to 1, indicating an error condition.
+
+Note that the "exit" command can be used to terminate any running process in the shell, not just the shell session itself. When used in a script, it will terminate the script process and any child processes or commands that were executed by the script.
