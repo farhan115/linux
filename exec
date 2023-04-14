@@ -1,0 +1,21 @@
+exec
+
+The "exec" command in Linux is used to replace the current shell process with a new command or shell script.
+
+The basic syntax of the "exec" command is as follows:
+
+bash
+Copy code
+exec [options] command [arguments]
+Replace "command" with the name of the command or shell script you want to execute, and "arguments" with any arguments or parameters that the command requires.
+
+For example, to replace the current shell process with the "ls" command, you can use the following command:
+
+bash
+Copy code
+exec ls
+This will execute the "ls" command and replace the current shell process with the new process created by the command.
+
+The "exec" command is often used in shell scripts to replace the script process with another command or script, especially when the script needs to change the environment or configuration of the shell. For example, a script may use "exec" to change the working directory or set environment variables before executing another command.
+
+Note that when you use "exec" to replace the shell process, any commands or statements following the "exec" command in the script will not be executed, as the shell process has been replaced by the new command process.
