@@ -1,0 +1,21 @@
+echo
+
+The "echo" command in Linux is used to display a message or a value of a variable on the standard output.
+
+For example, to display the message "Hello, World!" on the terminal, you can use the following command:
+
+bash
+Copy code
+echo "Hello, World!"
+If you want to display the value of a variable, you can use the following syntax:
+
+bash
+Copy code
+echo $VARIABLE_NAME
+Replace "VARIABLE_NAME" with the name of the variable you want to display. For example, if you have a variable named "MY_NAME" and you want to display its value, you can use the following command:
+
+bash
+Copy code
+MY_NAME="John Doe"
+echo $MY_NAME
+This will display the value "John Doe" on the terminal.
