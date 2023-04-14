@@ -1,0 +1,27 @@
+env
+
+The "env" command in Linux is used to display or set environment variables.
+
+The basic syntax of the "env" command is as follows:
+
+css
+Copy code
+env [options] [name=value]... [command [args]...]
+If you run the "env" command without any arguments or options, it will display a list of all the current environment variables and their values.
+
+For example, to display the value of the "PATH" environment variable, you can use the following command:
+
+bash
+Copy code
+env | grep PATH
+If you want to set a new environment variable, you can specify it as a "name=value" pair. For example, to set the "MY_VAR" variable to the value "hello", you can use the following command:
+
+bash
+Copy code
+env MY_VAR=hello
+If you want to run a command with a specific environment variable or set of variables, you can specify them before the command. For example, to run the "ls" command with the "MY_VAR" environment variable set to "hello", you can use the following command:
+
+bash
+Copy code
+env MY_VAR=hello ls
+The "env" command also supports various options, such as "-i" to start with an empty environment, "-u" to unset an environment variable, and "-S" to split a string into multiple environment variables. You can use the "man env" command to access the manual page of the command and learn more about its usage and options.
