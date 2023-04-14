@@ -1,0 +1,19 @@
+expand
+
+The "expand" command in Linux is used to convert tabs to spaces in a file or standard input.
+
+The basic syntax of the "expand" command is as follows:
+
+css
+Copy code
+expand [options] [file]
+Replace "file" with the name of the file you want to convert tabs to spaces in. If no file is specified, the command will read from standard input.
+
+For example, to convert tabs to 4 spaces in a file named "example.txt", you can use the following command:
+
+bash
+Copy code
+expand -t 4 example.txt
+This will convert any tabs in the file to 4 spaces.
+
+The "expand" command also supports various options, such as "-t" to specify the number of spaces to use for each tab, "-a" to convert all spaces to tabs, and "-i" to ignore leading spaces in a line. You can use the "man expand" command to access the manual page of the command and learn more about its usage and options.
