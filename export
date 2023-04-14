@@ -1,0 +1,21 @@
+export
+
+The "export" command in Linux is used to set an environment variable and make it available to child processes.
+
+The basic syntax of the "export" command is as follows:
+
+arduino
+Copy code
+export [name[=value]]
+Replace "name" with the name of the environment variable you want to set, and "value" with the value you want to assign to the variable.
+
+For example, to set the "MY_VAR" environment variable to the value "hello", you can use the following command:
+
+arduino
+Copy code
+export MY_VAR=hello
+Once you have exported an environment variable, it will be available to any child processes spawned by the current shell session. For example, if you run a script that needs to access the "MY_VAR" environment variable, it will be able to do so if the variable has been exported in the parent shell.
+
+Note that environment variables that are not exported will only be available to the current shell session and not to any child processes. To make an environment variable available to child processes, you need to export it using the "export" command.
+
+You can also use the "env" command to display a list of all environment variables and their values, including those that have been exported.
