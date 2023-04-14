@@ -1,0 +1,31 @@
+egrep
+
+The "egrep" command in Linux is used to search for a specific pattern in a file or multiple files. It is a variant of the "grep" command with extended regular expressions.
+
+The basic syntax of the "egrep" command is as follows:
+
+arduino
+Copy code
+egrep 'pattern' file1 file2 ...
+Replace "pattern" with the regular expression you want to search for, and "file1", "file2", etc. with the names of the files you want to search in.
+
+For example, if you have a file named "example.txt" containing the following text:
+
+vbnet
+Copy code
+This is an example text file.
+It contains some lines of text.
+And you want to search for all lines containing the word "example", you can use the following command:
+
+arduino
+Copy code
+egrep 'example' example.txt
+This will display the following output:
+
+vbnet
+Copy code
+This is an example text file.
+Note that the "egrep" command supports various options and advanced regular expressions for more complex search patterns. You can use the "man egrep" command to access the manual page of the command and learn more about its usage and options.
+
+
+
