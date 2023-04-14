@@ -1,0 +1,21 @@
+eject
+
+The "eject" command in Linux is used to eject removable media such as CDs, DVDs, and USB drives from the system.
+
+The basic syntax of the "eject" command is as follows:
+
+css
+Copy code
+eject [options] [device]
+Replace "device" with the name of the device you want to eject. If you don't specify a device name, the command will eject the default device (usually the CD/DVD drive).
+
+For example, to eject a CD from the default device, you can use the following command:
+
+Copy code
+eject
+If you want to eject a specific device (e.g., /dev/sr0), you can use the following command:
+
+bash
+Copy code
+eject /dev/sr0
+The "eject" command also supports various options, such as "-T" to close the tray after ejecting, "-s" to prevent the device from spinning up when ejected, and "-p" to eject the media from a SCSI device. You can use the "man eject" command to access the manual page of the command and learn more about its usage and options.
