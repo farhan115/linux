@@ -1,0 +1,32 @@
+fmt
+
+The "fmt" Linux command is used to format text files by reflowing lines and adjusting line breaks based on specified parameters.
+
+The basic syntax of the "fmt" command is as follows:
+
+css
+Copy code
+fmt [options] [filename]
+Here, "filename" is the name of the text file you want to format. If "filename" is not specified, "fmt" will read from standard input.
+
+Some common options for the "fmt" command include:
+
+"-w n" : Set the maximum line width to "n" characters.
+"-s" : Split long lines at sentence boundaries.
+"-t" : Indent the first line of each paragraph.
+"-u" : Leave underline characters in the text and treat them as bold.
+Here are some examples of using the "fmt" command:
+
+To reformat a text file named "example.txt" to have a maximum line width of 80 characters:
+bash
+Copy code
+fmt -w 80 example.txt
+This reformats the text in "example.txt" to have lines no longer than 80 characters.
+
+To reformat a text file named "example.txt" to indent the first line of each paragraph and split long lines at sentence boundaries:
+bash
+Copy code
+fmt -t -s example.txt
+This reformats the text in "example.txt" to have an indented first line for each paragraph and to split long lines at the end of sentences.
+
+Note that the "fmt" command is a useful tool for formatting text files, but it may not always produce the desired output for more complex formatting needs.
