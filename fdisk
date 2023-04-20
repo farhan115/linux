@@ -1,0 +1,3 @@
+fdisk
+
+The "fdisk" Linux command is a command-line utility that is used to manage disk partitions on a hard disk. It allows you to create, delete, and modify partitions on your hard disk. With "fdisk", you can view the current partition table, create a new partition, delete an existing partition, and modify partition attributes such as size, type, and location. It is a powerful tool, but it should be used with caution as incorrect usage can result in data loss. It is important to have a good understanding of disk partitioning concepts before using "fdisk".
