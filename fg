@@ -1,0 +1,14 @@
+fg
+
+The "fg" Linux command is used to bring a job that has been stopped or sent to the background back to the foreground.
+
+When a command is running in the foreground, it takes control of the terminal and you cannot run any other commands until it completes or is stopped. If you have started a command in the background using the "&" operator, you can bring it back to the foreground using the "fg" command.
+
+To use the "fg" command, follow these steps:
+
+Open a terminal window on your Linux system.
+Type "jobs" to list all currently running jobs and their job numbers.
+Type "fg %jobnumber" where "jobnumber" is the number of the job you want to bring back to the foreground.
+For example, if the job you want to bring back to the foreground has a job number of 1, you would type "fg %1".
+
+Once you have used the "fg" command, the job will take control of the terminal again and you can interact with it as normal.
