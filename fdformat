@@ -1,0 +1,3 @@
+fdformat
+
+The "fdformat" Linux command is used to format floppy disks. It can be used to create a new file system on the floppy disk, erase all data on it and make it usable for storing data again. However, it should be noted that floppy disks are becoming less common and many modern computers may not even have a floppy drive. Additionally, the "fdformat" command may require superuser privileges to run, so it should be used with caution.
