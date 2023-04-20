@@ -1,0 +1,22 @@
+fgrep
+
+The "fgrep" Linux command is used to search for a string or pattern in one or more files. It is a variant of the "grep" command that searches for fixed strings instead of regular expressions.
+
+The basic syntax of the "fgrep" command is as follows:
+
+css
+Copy code
+fgrep [options] pattern [file ...]
+Here, "pattern" is the string or fixed pattern you want to search for, and "file" is the name of the file(s) in which you want to search. If you don't specify any file names, "fgrep" will read from standard input.
+
+Some common options for the "fgrep" command include:
+
+"-i" : Ignore case distinctions in both the pattern and the input files
+"-r" : Recursively search subdirectories
+"-l" : Print only the names of files that contain the pattern
+"-c" : Print only a count of the lines that contain the pattern
+Here is an example of using the "fgrep" command to search for the string "hello" in the file "example.txt":
+
+Copy code
+fgrep hello example.txt
+This will search for the exact string "hello" in "example.txt" and print any lines that contain it.
