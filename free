@@ -1,0 +1,26 @@
+free
+
+The free command in Linux is used to display information about the system's memory usage. It reports the total amount of available and used physical memory (RAM), as well as the total amount of swap space used.
+
+The basic syntax of the free command is as follows:
+
+c
+Copy code
+free
+When you run the free command without any arguments, it will display the memory usage statistics in kilobytes (KB). The output will include the following columns:
+
+total: the total amount of physical memory in the system
+used: the amount of physical memory that is currently being used
+free: the amount of physical memory that is currently free
+shared: the amount of physical memory that is being shared between different processes
+buffers: the amount of physical memory used by the kernel for buffer cache
+cached: the amount of physical memory used by the kernel for page caching
+In addition, the output will also show the total amount of swap space used by the system.
+
+You can also use the free command with the -h option to display the memory usage statistics in a more human-readable format, with the values displayed in megabytes (MB) or gigabytes (GB).
+
+Overall, the free command is a useful tool for monitoring system memory usage, and it can be used in a variety of ways to help diagnose memory-related performance issues.
+
+
+
+
