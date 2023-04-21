@@ -1,0 +1,22 @@
+ftp
+
+The ftp command in Linux is used to transfer files between a local system and a remote system over the File Transfer Protocol (FTP). FTP is a standard protocol used for transferring files over a network.
+
+The basic syntax of the ftp command is as follows:
+
+Copy code
+ftp remotehost
+Here, remotehost is the hostname or IP address of the remote system that you want to connect to. For example, if you want to connect to a remote system with the IP address 192.168.1.100, you would use the command:
+
+Copy code
+ftp 192.168.1.100
+When you run the ftp command, you will be prompted to enter a username and password to authenticate with the remote system. Once you have authenticated, you can use a variety of commands to transfer files, navigate directories, and perform other FTP-related tasks.
+
+Some common ftp commands include:
+
+ls: list files and directories on the remote system
+cd: change the current directory on the remote system
+get: download a file from the remote system to the local system
+put: upload a file from the local system to the remote system
+bye: disconnect from the remote system and exit the FTP session
+Overall, the ftp command is a useful tool for transferring files between systems over a network, and it can be used in a variety of ways to perform different FTP-related tasks.
