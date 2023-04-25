@@ -1,0 +1,38 @@
+hash
+
+hash is a built-in command in Linux that is used to remember the location of commands that you have executed previously in the current shell session. It is useful for speeding up command execution time by reducing the need to search for the location of a command in the file system.
+
+The hash command has the following syntax:
+
+css
+Copy code
+hash [options] [name ...]
+Here's what each part of the syntax means:
+
+hash is the command name.
+[options] are the optional command-line options you can use with hash. These can include flags like -r to reset the command location cache and -p to add a new directory to the search path for command locations.
+[name ...] is a list of command names whose location you want to display.
+Here are some examples of how to use hash:
+
+Display the location of a command named ls:
+
+bash
+Copy code
+hash ls
+Reset the command location cache:
+
+bash
+Copy code
+hash -r
+Add a new directory to the search path for command locations:
+
+bash
+Copy code
+hash -p /usr/local/bin
+Note that hash is typically used automatically by the shell to remember command locations, and you do not need to use it directly in most cases. However, it can be useful for troubleshooting command location issues.
+
+For more information on how to use hash, you can refer to the manual by typing man hash in the terminal.
+
+
+
+
