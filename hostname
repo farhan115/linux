@@ -1,0 +1,35 @@
+hostname
+
+The hostname command is a Linux command-line utility that is used to display or set the hostname of a Linux system. The hostname is the unique name that identifies a computer on a network.
+
+The basic syntax of the hostname command is as follows:
+
+css
+Copy code
+hostname [options] [new_hostname]
+Here's what each part of the syntax means:
+
+hostname is the command name.
+[options] are the optional command-line options you can use with hostname. These can include flags like -f to display the fully qualified domain name and -s to display the short name (hostname without the domain name).
+[new_hostname] is the new hostname you want to set. This argument is optional and only used if you want to change the hostname.
+Here are some examples of how to use hostname:
+
+Display the current hostname:
+
+Copy code
+hostname
+Display the fully qualified domain name of the system:
+
+Copy code
+hostname -f
+Set a new hostname for the system:
+
+Copy code
+hostname new_hostname
+Display the short name (hostname without the domain name) of the system:
+
+Copy code
+hostname -s
+Note that changing the hostname using the hostname command only affects the system's hostname until the next reboot. To make the change permanent, you will need to update the hostname configuration file.
+
+For more information on how to use hostname, you can refer to the manual by typing man hostname in the terminal.
