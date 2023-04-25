@@ -1,0 +1,47 @@
+getopts
+
+getopts is a built-in shell command in Linux that is used to parse command-line options and arguments. It is commonly used in shell scripts to provide options to a script without requiring the user to pass the options in a specific order.
+
+Here's how getopts works:
+
+The getopts command reads the command-line options and arguments passed to a script, one at a time. It sets the value of the variable specified as its first argument to the value of the next option or argument encountered. The options are specified by a single character, followed by a colon (:), which indicates that the option requires an argument.
+
+The syntax for using getopts is as follows:
+
+bash
+Copy code
+while getopts options opt
+do
+    case $opt in
+        option1) command1;;
+        option2) command2;;
+        option3) command3;;
+        ?) echo "Usage: [-option1] [-option2 arg] [-option3]";;
+    esac
+done
+Here's what each part of the syntax means:
+
+options is a string that contains the options that the script accepts. Each option is a single character, followed by a colon if the option requires an argument. For example, a:b:c means that the script accepts three options, -a, -b, and -c. Option -b requires an argument.
+opt is a variable that holds the current option that getopts has read.
+The while loop reads options and arguments until there are no more left.
+The case statement handles each option that getopts reads. Each option has a corresponding command to execute.
+The ? option handles unknown options. In this example, it prints usage information and exits.
+Here's an example of a script that uses getopts to process command-line options:
+
+bash
+Copy code
+#!/bin/bash
+
+while getopts ":a:b:c" opt; do
+  case $opt in
+    a) arg1="$OPTARG";;
+    b) arg2="$OPTARG";;
+    c) arg3=1;;
+    \?) echo "Invalid option: -$OPTARG" >&2;;
+  esac
+done
+
+echo "Option a: $arg1"
+echo "Option b: $arg2"
+echo "Option c: $arg3"
+In this example, the script accepts three options: -a, -b, and -c. Option -a and -b require arguments. Option -c does not require an argument. The script assigns the argument values to variables $arg1 and $arg2 and sets $arg3 to 1 if option -c is present. The \? option handles unknown options and prints an error message.
