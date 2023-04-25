@@ -1,0 +1,39 @@
+head
+
+head is a Linux command-line utility that is used to display the first few lines of a file. It is commonly used to preview the contents of a large file or to extract a subset of data from a file.
+
+The basic syntax of the head command is as follows:
+
+bash
+Copy code
+head [options] file_name
+Here's what each part of the syntax means:
+
+head is the command name.
+[options] are the optional command-line options you can use with head. These can include flags like -n to specify the number of lines to display and -q to suppress the headers that indicate the filename.
+file_name is the name of the file you want to display the first few lines of.
+Here are some examples of how to use head:
+
+Display the first 10 lines of a file named file.txt:
+
+bash
+Copy code
+head file.txt
+Display the first 5 lines of a file named file.txt:
+
+bash
+Copy code
+head -n 5 file.txt
+Display the first 10 lines of all files in a directory named my_directory:
+
+bash
+Copy code
+head my_directory/*
+Display the first 10 lines of a file named file.txt, without displaying the filename header:
+
+bash
+Copy code
+head -q file.txt
+Note that head is often used in conjunction with other commands, such as grep, to filter and extract specific lines from a file.
+
+For more information on how to use head, you can refer to the manual by typing man head in the terminal.
