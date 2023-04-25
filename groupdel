@@ -1,0 +1,28 @@
+groupdel
+
+groupdel is a Linux command-line utility that is used to delete a group from the system. It is typically used by system administrators to manage user access to resources on a Linux system.
+
+The basic syntax of the groupdel command is as follows:
+
+Copy code
+groupdel group_name
+Here's what each part of the syntax means:
+
+groupdel is the command name.
+group_name is the name of the group you want to delete.
+Here are some examples of how to use groupdel:
+
+Delete a group named developers:
+
+Copy code
+groupdel developers
+Delete a group named test:
+
+bash
+Copy code
+groupdel test
+Note that when you delete a group, the group's files and directories are not deleted. If you want to delete the group's files and directories as well, you will need to use a separate command, such as rm -rf /path/to/group.
+
+Also note that deleting a group will remove all users that are currently members of the group. If you want to remove a user from a group without deleting the group, you will need to use a separate command, such as gpasswd -d username group_name.
+
+For more information on how to use groupdel, you can refer to the manual by typing man groupdel in the terminal.
