@@ -1,0 +1,33 @@
+help
+
+The help command is a built-in command in Linux that is used to display information about built-in shell commands. It provides a quick reference for the syntax and usage of common shell commands.
+
+The basic syntax of the help command is as follows:
+
+scss
+Copy code
+help [command_name]
+Here's what each part of the syntax means:
+
+help is the command name.
+[command_name] is an optional argument that specifies the name of the command you want help for.
+Here are some examples of how to use help:
+
+Display help for the cd command:
+
+bash
+Copy code
+help cd
+Display help for the ls command:
+
+bash
+Copy code
+help ls
+Display help for the help command:
+
+bash
+Copy code
+help help
+Note that help is only available for built-in shell commands, and not for commands that are installed as separate programs on the system. For those commands, you can typically refer to their manual pages using the man command.
+
+For more information on how to use help, you can refer to the manual by typing help help in the terminal.
