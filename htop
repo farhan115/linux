@@ -1,0 +1,40 @@
+htop
+
+htop is a Linux command-line utility that is used to monitor system resources and processes in real time. It is a more advanced version of the top command and provides a more detailed and customizable view of system performance.
+
+The basic syntax of the htop command is simply:
+
+Copy code
+htop
+Here's what the syntax means:
+
+htop is the command name.
+When you run htop, you will be presented with a real-time display of the system's CPU usage, memory usage, and other system metrics. You can use the arrow keys and function keys to navigate the display, sort processes by different criteria, and perform various actions on running processes.
+
+Here are some examples of how to use htop:
+
+Start htop:
+
+Copy code
+htop
+Sort processes by CPU usage:
+
+Use the up and down arrow keys to select the CPU% column
+Press the Enter key to sort processes by CPU usage
+Search for a process by name:
+
+Press the / key to enter search mode
+Type the name of the process you want to search for
+Press the Enter key to search
+Kill a running process:
+
+Use the arrow keys to select the process you want to kill
+Press the F9 key to display the process action menu
+Select the SIGKILL signal to send to the process to kill it
+Note that htop requires root or superuser privileges to display information about other users' processes.
+
+For more information on how to use htop, you can refer to the manual by typing man htop in the terminal.
+
+
+
+
