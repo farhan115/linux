@@ -1,0 +1,38 @@
+groupadd
+
+groupadd is a Linux command-line utility that is used to create a new group on the system. It is typically used by system administrators to manage user access to resources on a Linux system.
+
+The basic syntax of the groupadd command is as follows:
+
+css
+Copy code
+groupadd [options] group_name
+Here's what each part of the syntax means:
+
+groupadd is the command name.
+[options] are the optional command-line options you can use with groupadd. These can include flags like -g to specify a GID (group ID) for the new group and -r to create a system group.
+group_name is the name of the new group you want to create.
+Here are some examples of how to use groupadd:
+
+Create a new group named developers:
+
+Copy code
+groupadd developers
+Create a new group named staff with a specific GID:
+
+Copy code
+groupadd -g 500 staff
+Create a new system group named sysadmin:
+
+Copy code
+groupadd -r sysadmin
+Create a new group named test with a specific group owner:
+
+bash
+Copy code
+groupadd -o -g 500 -r test
+Note that groupadd is typically used in conjunction with the useradd command to create new users and assign them to groups. For more information on how to use groupadd, you can refer to the manual by typing man groupadd in the terminal.
+
+
+
+
