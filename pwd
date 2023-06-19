@@ -1,0 +1,21 @@
+The pwd command in Linux is used to display the current working directory (cwd) in the terminal. It stands for "print working directory."
+
+Here is how you can use the pwd command:
+
+Open a terminal or command prompt.
+
+Type pwd.
+
+bash
+Copy code
+pwd
+Press Enter. The pwd command will display the absolute path of the current working directory.
+The output will typically be the full path starting from the root directory ("/") or the relative path from the current location.
+
+The pwd command is useful when you want to quickly check and verify the current directory you are working in. It can be especially helpful when navigating the file system or when writing shell scripts that require knowledge of the current directory.
+
+Please note that the output of the pwd command is specific to the current shell session. If you change directories within the session, the pwd command will reflect the updated current working directory.
+
+You can also use the pwd command with options to modify its behavior, but the basic usage mentioned above covers the most common use case.
+
+You can refer to the pwd command's manual page (man pwd) for more information on specific options and additional usage examples.
