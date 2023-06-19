@@ -1,0 +1,24 @@
+The paste command in Linux is used to merge lines from multiple files horizontally. It takes the contents of multiple files as input and combines corresponding lines from each file, separated by a delimiter. Here is the basic syntax of the paste command:
+
+bash
+Copy code
+paste [options] file1 file2 ...
+To merge lines from multiple files using paste, follow these steps:
+
+Open a terminal or command prompt.
+
+Type paste followed by the names of the files you want to merge. You can specify two or more files, separated by spaces.
+
+bash
+Copy code
+paste file1 file2 file3
+By default, paste merges the lines from each file using a tab character as the delimiter. If you want to use a different delimiter, you can specify it using the -d option followed by the desired delimiter character.
+bash
+Copy code
+paste -d ',' file1 file2 file3
+This example merges lines from file1, file2, and file3 using a comma (,) as the delimiter.
+
+Press Enter to execute the paste command. The merged lines from the specified files will be displayed in the terminal.
+The paste command is useful for merging corresponding lines of different files, such as when you want to combine data from multiple sources or compare information side by side. It can be used with plain text files or other structured files.
+
+You can refer to the paste command's manual page (man paste) for more information on additional options and functionalities available.
