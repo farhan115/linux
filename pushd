@@ -1,0 +1,29 @@
+The pushd command in Linux is used to change the current working directory (cwd) and simultaneously push the current directory onto a directory stack. It allows you to switch between directories while preserving the ability to return to previously visited directories easily.
+
+Here is how you can use the pushd command:
+
+Open a terminal or command prompt.
+
+Type pushd followed by the directory you want to navigate to. It can be an absolute path or a relative path.
+
+bash
+Copy code
+pushd /path/to/directory
+Press Enter. The pushd command will change the cwd to the specified directory and push the previous directory onto the directory stack.
+
+You can continue working in the new directory, and if needed, you can use the dirs command to display the directory stack and see the order of directories stored.
+
+To navigate back to the previous directory (top of the stack), you can use the popd command.
+
+bash
+Copy code
+popd
+The popd command will pop the topmost directory from the stack and change the cwd back to the previous directory.
+
+By using the pushd and popd commands together, you can effectively navigate between directories and maintain a history of visited directories.
+
+The directory stack operates as a last-in, first-out (LIFO) data structure. Each time you use pushd, the current directory is added to the stack, and each popd removes the topmost directory from the stack.
+
+Please note that the directory stack is specific to the current shell session. If you open a new terminal or start a new shell session, the directory stack will not persist.
+
+You can refer to the pushd and popd commands' manual pages (man pushd and man popd) for more information on additional options and specific usage examples.
