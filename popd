@@ -1,0 +1,28 @@
+The popd command in Linux is used to remove the topmost directory from the directory stack and change the current working directory (cwd) to the directory that was previously on top of the stack. It is commonly used in conjunction with the pushd command to switch between directories efficiently.
+
+Here is how you can use the popd command:
+
+Open a terminal or command prompt.
+
+Use the popd command without any arguments.
+
+bash
+Copy code
+popd
+Press Enter. The popd command will remove the topmost directory from the directory stack and change the cwd to the directory that was previously on top.
+The directory stack is a last-in, first-out (LIFO) data structure that allows you to save and manipulate a list of directories. Each time you use the pushd command to change directories, the current directory is pushed onto the stack. You can then use popd to retrieve and change back to previous directories.
+
+If you want to remove a specific directory from the stack, you can use the popd command with an argument specifying the index of the directory in the stack. For example, to remove the directory at index 2 from the stack, you can use:
+
+bash
+Copy code
+popd +2
+The popd command will automatically update the stack and change the cwd accordingly.
+
+You can also use the dirs command to view the directory stack and see the order of directories stored.
+
+Please note that the popd command only works if there are directories stored in the directory stack. If the stack is empty, using popd will result in an error.
+
+
+
+
