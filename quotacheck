@@ -1,0 +1,12 @@
+The quotacheck command in Linux is used to create and initialize the disk quota database files on a file system. It scans the file system and calculates disk usage for each user or group, updating the quota information accordingly. The command typically needs to be executed with root or administrator privileges.
+
+Here is the basic syntax of the quotacheck command:
+
+quotacheck [options] [filesystem]
+Options:
+
+-a, --all: Check all file systems listed in /etc/fstab for quotas.
+-u, --user: Check only user quotas.
+-g, --group: Check only group quotas.
+-f, --force: Force the checking even if the file system is mounted.
+-M, --no-remount: Do not remount the file system read-only during checking.
