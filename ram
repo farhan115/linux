@@ -1,0 +1,25 @@
+In Linux, the free command is commonly used to display information about the system's RAM (Random Access Memory) usage. It provides details about the total amount of RAM, used RAM, free RAM, and other memory-related statistics. The output of the free command shows both physical and swap memory usage.
+
+The basic syntax of the free command is as follows:
+
+free [options]
+By default, running the free command without any options will display the memory usage in kilobytes (KB). However, you can also use options to display the output in human-readable formats like megabytes (MB) or gigabytes (GB).
+
+Here are some commonly used options with the free command:
+
+-h, --human: Display memory sizes in human-readable format (e.g., MB, GB).
+-k, --kilo: Display memory sizes in kilobytes (default).
+-m, --mega: Display memory sizes in megabytes.
+-g, --giga: Display memory sizes in gigabytes.
+Example usage to display memory usage in MB and GB:
+
+free -m
+bash
+Copy code
+free -g
+The output will show the total, used, free, and available memory, as well as information about the swap space.
+
+Please note that the free command may not be available in all Linux distributions by default. However, most modern distributions include it, and you can install it easily if it's not already present on your system. Additionally, the free command requires root or administrator privileges to display complete memory usage details. If you encounter any issues, try running it with sudo:
+
+sudo free -m
+Always ensure you have the necessary permissions before executing commands with elevated privileges.
