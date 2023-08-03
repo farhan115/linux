@@ -1,0 +1,11 @@
+To manage disk quotas on a Linux system, you would typically use the quotacheck, quotaon, quotaoff, edquota, and repquota commands. Here's a brief explanation of each:
+
+quotacheck: This command is used to create and initialize the quota database files. It scans the file system and updates the quota information.
+
+quotaon: This command is used to enable disk quotas on a specific file system. Once quotas are enabled, the limits set using edquota will be enforced.
+
+quotaoff: This command is used to disable disk quotas on a specific file system.
+
+edquota: This command is used to edit disk quotas for a specific user or group. It opens a text editor where you can set soft and hard limits for the user/group.
+
+repquota: This command is used to display the disk usage and quota information for all users/groups on a file system.
